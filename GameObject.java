@@ -27,7 +27,7 @@ public abstract class GameObject {
 	}
 
 	public void setScreenSize(int screensize) {
-		SCREENSIZE = screensize;
+		if (screensize > 0) SCREENSIZE = screensize;
 		
 		if (getX() > SCREENSIZE) {
 			setX(SCREENSIZE);
